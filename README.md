@@ -192,8 +192,9 @@ AI-Structured Web is free to deploy under these conditions:
 * Implementing SaaS frameworks
 * Structural monetization of the framework
 * Deployment alongside dark patterns
-* License Terms
-* Licensed under CC BY-NC-ND 4.0 with custom addendum:
+
+# License Terms
+ Licensed under CC BY-NC-ND 4.0 with custom addendum:
 
 Attribution Required: Visible attribution on implementations
 
