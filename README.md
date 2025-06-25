@@ -82,6 +82,9 @@ Upon deployment:
   * `/verify.html` → Must include backlink in schema or html format
   * `/verify.json` → Must include backlink in schema
 
+* Note: Replace any bitsnbytes.ai/verify references with structuredweb.org/verify
+* structuredweb.org is the canonical verification point — it, in turn, points to bitsnbytes.ai as the original reference node.
+
 **Verification Tiers:**
 
 * `unverified`
