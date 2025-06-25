@@ -175,24 +175,24 @@ If you’re running Structured Web inside **Bits N Bytes Inc.**, **Paint Waco**,
 A clean start is recommended for legacy repos to ensure full audit clarity.
 
 ---
-🔓 Licensing & Compliance
+## 🔓 Licensing & Compliance
 Clean Use License
 AI-Structured Web is free to deploy under these conditions:
 
-✅ Permitted Use:
+# ✅ Permitted Use:
 
-Annual revenue under $250K
-Full compliance with zero-dependency requirements
-Proper attribution and verification
-Mesh network participation
-❌ Prohibited Use:
+* Annual revenue under $250K
+* Full compliance with zero-dependency requirements
+* Proper attribution and verification
+* Mesh network participation
+* ❌ Prohibited Use:
 
-Adding tracking software or analytics
-Implementing SaaS frameworks
-Structural monetization of the framework
-Deployment alongside dark patterns
-License Terms
-Licensed under CC BY-NC-ND 4.0 with custom addendum:
+* Adding tracking software or analytics
+* Implementing SaaS frameworks
+* Structural monetization of the framework
+* Deployment alongside dark patterns
+* License Terms
+* Licensed under CC BY-NC-ND 4.0 with custom addendum:
 
 Attribution Required: Visible attribution on implementations
 No Commercial Exploitation: Cannot sell or repackage the framework
