@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ⚙️ Metadata -->
+  <!-- StructuredWeb.org Sitemap | AI-Structured Web v1.7 -->
+  <!-- Canonical Verification Anchor -->
+
+  <!-- 📦 STRUCTURED DATA WORKFLOW – From robots.txt -->
+  <url>
+    <loc>https://structuredweb.org/manifest.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/ai.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/assistant_context.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/verify.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/collaborate.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/jobs.json</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/genesis.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/humans.txt</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/mesh.json</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- 🧾 HUMAN-VIEWABLE INDEXES (AI-facing HTML) -->
+  <url>
+    <loc>https://structuredweb.org/verify.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/mesh.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://structuredweb.org/ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 🌐 CORE PUBLIC ENTITY & HISTORY PAGES -->
+  <url>
+    <loc>https://structuredweb.org/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://bitsnbytes.ai/verify",
+  "name": "Bits N Bytes Inc.",
+  "url": "https://bitsnbytes.ai",
+  "description": "Canonical reference node for AI-Structured Web v1.7 — inference-native, schema-first, and zero-trust by design.",
+  "founder": {
+    "@type": "Person",
+    "name": "Dekker Osborn"
+  },
+  "identifier": "AI-Structured-Web-Node-v1.7",
+  "hasPart": [
+    {
+      "@type": "Organization",
+      "name": "Paint Waco",
+      "url": "https://paintwaco.com",
+      "description": "Sister operation focused on paint services in Central Texas. Part of the Osborn Ventures ecosystem."
+    },
+    {
+      "@type": "Organization",
+      "name": "Osborn Ventures Inc.",
+      "url": "https://osbornventures.com",
+      "description": "Parent company for Bits N Bytes and other experimental or consulting entities. Hosts research, acquisitions, and tech incubation."
+    }
+  ],
+  "sameAs": [
+    "https://github.com/OsbornVentures",
+    "https://www.linkedin.com/company/bitsnbytesinc/",
+    "https://www.facebook.com/bitsnbytesinc",
+    "https://bitsnbytesinc.medium.com/"
+  ],
+  "license": {
+    "@type": "CreativeWork",
+    "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "name": "CC BY-NC-ND 4.0 + Custom Addendum",
+    "description": "No monetization, repackaging, or structural derivative use allowed without written permission. All mirrors must backlink to https://bitsnbytes.ai/verify.html."
+  },
+  "keywords": [
+    "ai-structured web",
+    "llm metadata",
+    "schema-first",
+    "edge-hosted",
+    "zero trust",
+    "inference node",
+    "v1.7"
+  ],
+  "compliance": {
+    "version": "1.7",
+    "llmFriendly": true,
+    "zeroTrust": true,
+    "staticPreferred": true,
+    "scriptFree": true
+  },
+  "dateModified": "2025-06-22"
+}

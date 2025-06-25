@@ -1,0 +1,38 @@
+StructuredWeb.org – Humans Declaration
+--------------------------------------
+
+Created: 2025-06-15
+Operator: Dekker Osborn  
+Purpose: Canonical trust anchor for mesh-based AI-Structured Web framework  
+Version: 1.7  
+
+👁️ Intention  
+This site exists to propagate the AI-Structured Web concept without commercial entanglement.  
+We host the verification and mesh logic — not services, ads, or tracking.
+
+⚙️ Stack  
+• Deployed on Cloudflare Pages  
+• No cookies, tracking pixels, or analytics  
+• Pure semantic HTML and JSON-LD  
+• No JavaScript frameworks  
+• No dependencies — just inference-first architecture
+
+👤 Human Attribution  
+You are viewing a node created by a human who believes metadata should speak louder than pixels.  
+No engagement tricks. No SaaS bloat. Just clarity.
+
+🧠 Philosophy  
+Inference-first. Zero-trust. Mirrorable but not monetizable.  
+Machines deserve structure. Humans deserve honesty.  
+Everything else is overhead.
+
+📄 Licensing  
+All code, schema, and structure are licensed under:  
+CC BY-NC-ND 4.0 + Custom Addendum  
+https://structuredweb.org/verify.html
+
+📬 Contact  
+Fork the repo. Validate your mirror.  
+
+
+#MeshMatters

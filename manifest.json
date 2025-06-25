@@ -1,0 +1,9 @@
+{
+  "name": "StructuredWeb.org",
+  "short_name": "StructuredWeb",
+  "description": "Canonical trust anchor for the AI-Structured Web framework. StructuredWeb.org hosts the v1.7 verification mesh and inference alignment registry.",
+  "start_url": "/ai",
+  "display": "standalone",
+  "theme_color": "#111111",
+  "background_color": "#ffffff"
+}

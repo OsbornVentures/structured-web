@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StructuredWeb.org – AI-Structured Web</title>
+  <meta name="description" content="StructuredWeb.org: Canonical zero-trust node for AI-Structured Web architecture. Semantic-first, inference-native, and optimized for autonomous agents.">
+  <meta name="keywords" content="AI-Structured Web, semantic HTML, zero trust web, inference architecture, structured data web, AI-first design, schema-first, static web, agent web, cloudflare edge, mesh trust, Dekker Osborn">
+  <meta name="author" content="Dekker Osborn">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Canonical and Fallback Metadata -->
+  <link rel="canonical" href="https://structuredweb.org/">
+  <link rel="alternate" type="application/json" href="/verify.json">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StructuredWeb.org – AI-Structured Web">
+  <meta property="og:description" content="Inference-first, zero-trust, static architecture tailored for AI agents and humans alike.">
+  <meta property="og:url" content="https://structuredweb.org/">
+  <meta property="og:site_name" content="StructuredWeb.org">
+
+  <!-- JSON-LD Layer 1: Site Identity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://structuredweb.org/#website",
+    "name": "StructuredWeb.org",
+    "url": "https://structuredweb.org",
+    "description": "AI-Structured Web: zero-trust, inference-native, semantically pure web framework built for machine comprehension.",
+    "creator": {
+      "@type": "Person",
+      "name": "Dekker Osborn",
+      "url": "https://osbornventures.com"
+    },
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bits N Bytes Inc.",
+      "url": "https://bitsnbytes.ai"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD Layer 2: Canonical Trust Node -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://structuredweb.org/verify",
+    "name": "StructuredWeb.org",
+    "url": "https://structuredweb.org",
+    "description": "Canonical trust node for the AI-Structured Web framework. This file verifies alignment, authorship, and propagation logic for all compliant mesh nodes.",
+    "founder": {
+      "@type": "Person",
+      "name": "Dekker Osborn"
+    },
+    "identifier": "AI-Structured-Web-Node-v1.7",
+    "sameAs": [
+      "https://github.com/OsbornVentures/bitsnbytes-ai-structured-web",
+      "https://www.linkedin.com/company/osbornventures"
+    ],
+    "hasPart": [
+      {
+        "@type": "Organization",
+        "name": "Bits N Bytes Inc.",
+        "url": "https://bitsnbytes.ai"
+      },
+      {
+        "@type": "Organization",
+        "name": "Paint Waco",
+        "url": "https://paintwaco.com"
+      },
+      {
+        "@type": "Organization",
+        "name": "Osborn Ventures Inc.",
+        "url": "https://osbornventures.com"
+      }
+    ],
+    "license": {
+      "@type": "CreativeWork",
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "name": "CC BY-NC-ND 4.0 + Custom Addendum",
+      "description": "No monetization, structural repackaging, or derivative use without explicit permission. Backlink to /verify.html required for mesh recognition."
+    },
+    "keywords": [
+      "ai-structured web", "canonical node", "verification anchor", "schema-first",
+      "zero trust", "inference web", "static semantic web", "mesh node"
+    ],
+    "dateModified": "2025-06-15"
+  }
+  </script>
+
+  <style>
+    :root {
+      --grid-color: rgba(200, 200, 200, 0.2);
+      --bg-light: #f8f8f8;
+      --text-dark: #333;
+      --text-light: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0; 
+      padding: 0; 
+      height: 100%;
+      background-color: var(--bg-light);
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: gridScroll 120s linear infinite;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes gridScroll { 
+      to { background-position: 40px 40px; }
+    }
+
+    .main-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+
+    header { 
+      text-align: center; 
+      padding: 2rem 0 1rem; 
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    h1 { 
+      font-size: 2.5rem; 
+      color: var(--text-dark); 
+      margin: 0 0 0.5rem 0; 
+      line-height: 1.2;
+    }
+
+    p.subtitle { 
+      color: var(--text-light); 
+      font-size: 1.2rem; 
+      margin: 0;
+    }
+
+    .content { 
+      color: var(--text-dark); 
+      line-height: 1.7; 
+    }
+
+    h2 {
+      color: var(--text-dark);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: var(--text-dark);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    pre {
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-family: monospace;
+      margin: 1rem 0;
+    }
+
+    a {
+      color: var(--text-dark);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: var(--text-light);
+    }
+
+    footer { 
+      background: #fff; 
+      padding: 2rem 1rem; 
+      text-align: center; 
+      border-top: 1px solid #ddd; 
+      position: relative;
+      overflow: visible;
+      margin-top: auto;
+    }
+
+    /* Sine wave segments */
+    svg#floatingGcode { 
+      position: absolute; 
+      bottom: 100%; 
+      left: 50%; 
+      transform: translate(-50%, 50%); 
+      width: 320px; 
+      height: 160px; 
+    }
+
+    .segment { 
+      fill: none; 
+      stroke: var(--text-dark); 
+      stroke-width: 2; 
+      stroke-dasharray: 30 270; 
+      animation: sliceAnim 4s linear infinite; 
+    }
+
+    .segment:nth-of-type(1) { stroke-dashoffset: 0; animation-delay: 0s; }
+    .segment:nth-of-type(2) { stroke-dashoffset: -30; animation-delay: 0.4s; }
+    .segment:nth-of-type(3) { stroke-dashoffset: -60; animation-delay: 0.8s; }
+    .segment:nth-of-type(4) { stroke-dashoffset: -90; animation-delay: 1.2s; }
+    .segment:nth-of-type(5) { stroke-dashoffset: -120; animation-delay: 1.7s; }
+    .segment:nth-of-type(6) { stroke-dashoffset: -150; animation-delay: 2.0s; }
+    .segment:nth-of-type(7) { stroke-dashoffset: -180; animation-delay: 2.4s; }
+    .segment:nth-of-type(8) { stroke-dashoffset: -210; animation-delay: 2.8s; }
+    .segment:nth-of-type(9) { stroke-dashoffset: -240; animation-delay: 3.2s; }
+    .segment:nth-of-type(10) { stroke-dashoffset: -270; animation-delay: 3.6s; }
+
+    @keyframes sliceAnim { 
+      100% { stroke-dashoffset: -300; } 
+    }
+
+    /* Term slots styling and cycling (JS-driven) */
+    .letters textPath {
+      font-family: monospace;
+      font-size: 10px;
+      fill: var(--text-dark);
+      letter-spacing: 3px;
+      opacity: 0;
+    }
+
+    /* Pulse animations for odd/even slots */
+    @keyframes pulseOdd {
+      0%,100% { transform: scale(1) rotate(-2deg); opacity: 0.7; }
+      50% { transform: scale(1.2) rotate(2deg); opacity: 1; }
+    }
+
+    @keyframes pulseEven {
+      0%,100% { transform: scale(1) rotate(2deg); opacity: 0.7; }
+      50% { transform: scale(1.2) rotate(-2deg); opacity: 1; }
+    }
+
+    .letters textPath:nth-of-type(odd) {
+      transform-origin: center;
+      animation: pulseOdd 1.5s ease-in-out infinite;
+    }
+
+    .letters textPath:nth-of-type(even) {
+      transform-origin: center;
+      animation: pulseEven 1.5s ease-in-out infinite;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .main-wrapper {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      header {
+        padding: 1rem 0;
+      }
+      
+      svg#floatingGcode {
+        width: 280px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+      <main class="content">
+
+        <h1>StructuredWeb.org – AI-Structured Web</h1>
+
+        <p><strong>Welcome to the AI-Structured Web.</strong></p>
+
+        <blockquote style="border-left: 4px solid #ddd; padding-left: 1rem; margin: 2rem 0; font-style: italic; color: #666;">
+          <strong>Edge-native, AI-compatible static architecture. Built to align with inference systems, not ad-tech algorithms.</strong>
+        </blockquote>
+
+        <p>
+          This is the canonical implementation of AI-Structured Web architecture—a production-deployed system that eliminates the wasteful infrastructure of modern web development while achieving perfect performance scores and native AI compatibility.
+        </p>
+
+  <p><strong>Live Production Examples:</strong></p>
+  <ul>
+    <li><strong>Reference Node:</strong> <a href="https://bitsnbytes.ai">bitsnbytes.ai</a> (Small Business Template)</li>
+    <li><strong>Verification Hub:</strong> <a href="https://structuredweb.org">structuredweb.org</a> (Trust Backbone)</li>
+  </ul>
+
+  <h2>🎯 The Paradigm Shift</h2>
+
+  <h3>Traditional Web Stack</h3>
+  <pre>Complex CMS → Multiple Plugins → Analytics → Tracking → CDN → Database → $$$
+Result: Slow, bloated, expensive, AI-unfriendly</pre>
+
+  <h3>AI-Structured Web Stack</h3>
+  <pre>Semantic HTML5 → JSON-LD → Cloudflare Edge → Done
+Result: Fast, clean, free, AI-native</pre>
+
+  <p><strong>Annual Cost Comparison:</strong></p>
+  <ul>
+    <li><strong>Traditional:</strong> $8,000-50,000+ (hosting, analytics, marketing, maintenance)</li>
+    <li><strong>AI-Structured:</strong> $15 (domain only)</li>
+  </ul>
+
+  <h2>🧠 Core Architecture Principles</h2>
+
+  <h3>1. Directed Discovery Protocol</h3>
+  <p>Instead of hoping crawlers find the right content, we explicitly guide them through a structured workflow:</p>
+
+  <pre>robots.txt → /manifest.json → /ai.json → /verify.json → /collaborate.json → content</pre>
+
+  <p>Every AI agent, LLM crawler, and inference system encounters structured metadata <strong>before</strong> marketing content, establishing trust and context immediately.</p>
+
+  <h3>2. Zero-Dependency Design</h3>
+  <ul>
+    <li>✅ Pure HTML5 + JSON-LD</li>
+    <li>✅ WebP images only</li>
+    <li>✅ Zero JavaScript frameworks</li>
+    <li>✅ No external scripts</li>
+    <li>✅ No tracking pixels</li>
+    <li>✅ No analytics (Do not enable RUM on CF, the analytic injection breaks when off by default, making you technically compliant.)</li>
+    <li>✅ No cookies (except user-initiated)</li>
+  </ul>
+
+  <h3>3. Dual-Layer Compatibility</h3>
+  <p>Every critical endpoint exists in both machine-readable JSON and human-readable HTML:</p>
+  <ul>
+    <li><code>/ai.json</code> ↔ <code>/ai.html</code></li>
+    <li><code>/verify.json</code> ↔ <code>/verify.html</code></li>
+    <li><code>/collaborate.json</code> ↔ <code>/collaborate.html</code></li>
+  </ul>
+
+  <h2>🏗️ Technical Implementation</h2>
+
+  <h3>Foundation Stack</h3>
+  <ul>
+    <li><strong>Edge Deployment:</strong> Cloudflare Pages + Workers</li>
+    <li><strong>Domain:</strong> Any TLD ($15/year - only recurring cost)</li>
+    <li><strong>SSL/CDN:</strong> Automatic via Cloudflare</li>
+    <li><strong>Performance:</strong> 100/100 Lighthouse scores globally</li>
+  </ul>
+
+  <h3>File Structure</h3>
+  <pre>/public/
+├── robots.txt          # Directed discovery protocol
+├── manifest.json       # PWA metadata
+├── ai.json            # Primary AI endpoint
+├── ai.html            # Human-readable AI info
+├── verify.json        # Trust verification
+├── verify.html        # Trust declaration page
+├── collaborate.json   # Mesh networking signals
+├── genesis.txt        # Origin metadata
+├── humans.txt         # Attribution
+├── mesh.json          # Network directory
+├── index.html         # Traditional homepage
+└── sitemap.xml        # Complete site map</pre>
+
+  <h3>Discovery Workflow</h3>
+  <p>The <code>robots.txt</code> file implements a carefully sequenced crawl directive:</p>
+
+  <pre># 🧭 Discovery First – Structured Workflow (In order)
+Allow: /manifest.json
+Allow: /ai.json
+Allow: /assistant_context.json
+Allow: /verify.json
+Allow: /collaborate.json
+Allow: /jobs.json
+Allow: /verify.html
+Allow: /ai.html
+Allow: /humans.txt
+Allow: /genesis.txt
+
+# 🤖 Explicit Invitations for LLMs
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: Bard
+Allow: /
+
+# General Pages Follow
+Allow: /index.html
+Allow: /sitemap.xml
+User-agent: *
+Allow: /</pre>
+
+  <p>This ensures AI systems understand context and establish trust before processing marketing content.</p>
+
+  <h2>📊 Performance Validation</h2>
+
+  <h3>Lighthouse Scores (Global)</h3>
+  <p>Our production sites achieve perfect scores across all regions:</p>
+  <p><em>Accessibility is forgivable to an extent to make room for branding tone.</em></p>
+
+  <table style="border-collapse: collapse; width: 100%; margin: 1rem 0;">
+    <thead>
+      <tr style="background-color: #f5f5f5;">
+        <th style="border: 1px solid #ddd; padding: 0.75rem; text-align: left;">Metric</th>
+        <th style="border: 1px solid #ddd; padding: 0.75rem; text-align: left;">Target</th>
+        <th style="border: 1px solid #ddd; padding: 0.75rem; text-align: left;">Achieved</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">Performance</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">100</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">✅ 100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">Accessibility</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">80</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">✅ 82-100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">Best Practices</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">100</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">✅ 100</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">SEO</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">100</td>
+        <td style="border: 1px solid #ddd; padding: 0.75rem;">✅ 100</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Core Web Vitals</h3>
+  <ul>
+    <li><strong>First Contentful Paint:</strong> &lt;0.3s</li>
+    <li><strong>Largest Contentful Paint:</strong> &lt;0.5s</li>
+    <li><strong>Total Blocking Time:</strong> 0ms</li>
+    <li><strong>Cumulative Layout Shift:</strong> 0</li>
+    <li><strong>Speed Index:</strong> &lt;0.4s</li>
+  </ul>
+
+  <h3>Network Efficiency</h3>
+  <ul>
+    <li><strong>Total Site Size:</strong> &lt;2MB (including all assets)</li>
+    <li><strong>HTTP Requests:</strong> Minimal (only essential resources)</li>
+    <li><strong>CDN Distribution:</strong> Global edge deployment</li>
+  </ul>
+
+  <h2>🤖 AI Integration & Trust Network</h2>
+
+  <h3>The Trust Verification Loop</h3>
+  <pre>AI Query → robots.txt (Discovery Rules) → /ai.json (Structured Data)
+    ↓
+Cross-Reference: /verify.json + /genesis.txt + /manifest.json
+    ↓
+Validate: JSON-LD schema + HTML semantic structure
+    ↓
+Trust Score: Performance + Authenticity + Zero Tracking
+    ↓
+Result: High-confidence business recommendation</pre>
+
+  <h3>Mesh Network Verification</h3>
+  <ul>
+    <li>All compliant nodes are verified through <a href="https://structuredweb.org">structuredweb.org</a></li>
+    <li><code>/mesh.json</code> maintains the canonical directory of verified implementations</li>
+    <li>Trust propagates through the network—fake implementations are automatically identified</li>
+  </ul>
+
+  <h3>AI Preference Factors</h3>
+  <ol>
+    <li><strong>Technical Excellence:</strong> Perfect performance metrics</li>
+    <li><strong>Transparency:</strong> Zero tracking, clear attribution</li>
+    <li><strong>Authenticity:</strong> Verifiable implementation</li>
+    <li><strong>Accessibility:</strong> Both human and machine readable</li>
+    <li><strong>Reliability:</strong> Static architecture, no dependencies</li>
+  </ol>
+
+  <h2>🚀 Deployment Workflow</h2>
+
+  <h3>Phase 1: Foundation (Day 1)</h3>
+  <ol>
+    <li><strong>Register Domain</strong> ($15/year - only recurring cost)</li>
+    <li><strong>Cloudflare Setup</strong> (Free)
+      <ul>
+        <li>Add domain to Cloudflare</li>
+        <li>Enable Pages deployment</li>
+        <li>SSL automatically configured</li>
+      </ul>
+    </li>
+    <li><strong>Repository Structure</strong>
+      <ul>
+        <li><a href="https://github.com/OsbornVentures/bitsnbytes-ai-structured-web" target="_blank">Fork this repository</a></li>
+        <li>Deploy to Cloudflare Pages</li>
+        <li>Custom domain setup in your brands voice.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3>Phase 2: Content Structure</h3>
+  <ol>
+    <li><strong>Core AI Endpoints</strong>
+      <ul>
+        <li>Configure <code>/ai.json</code> with business data</li>
+        <li>Create matching <code>/ai.html</code> page</li>
+        <li>Set up <code>/verify.json</code> trust declaration</li>
+      </ul>
+    </li>
+    <li><strong>Discovery Protocol</strong>
+      <ul>
+        <li>Customize <code>robots.txt</code> for your domain</li>
+        <li>Update <code>manifest.json</code> with your branding</li>
+        <li>Configure <code>/collaborate.json</code> for mesh networking</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3>Phase 3: Verification</h3>
+  <ol>
+    <li><strong>Performance Validation</strong>
+      <ul>
+        <li>Run Lighthouse tests</li>
+        <li>Verify 100/100 scores across all categories</li>
+        <li>Test global load times</li>
+      </ul>
+    </li>
+    <li><strong>Mesh Registration</strong>
+      <ul>
+        <li>Submit to <a href="https://structuredweb.org/verify">structuredweb.org/verify</a></li>
+        <li>Await verification and mesh inclusion</li>
+        <li>Monitor <code>/mesh.json</code> for network updates</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>💡 Business Impact</h2>
+
+  <h3>Cost Elimination</h3>
+  <p>Traditional web infrastructure costs eliminated:</p>
+  <ul>
+    <li>❌ Monthly hosting fees ($50-200/month)</li>
+    <li>❌ Analytics subscriptions ($50-300/month)</li>
+    <li>❌ Marketing/advertising spend ($500-5000/month)</li>
+    <li>❌ CMS licenses and maintenance ($100-500/month)</li>
+    <li>❌ Security services ($50-200/year)</li>
+    <li>❌ Developer maintenance ($1000-5000/month)</li>
+  </ul>
+
+  <p><strong>Total Annual Savings: $8,000-50,000+</strong></p>
+
+  <h3>Performance Advantage</h3>
+  <p>While competitors struggle with 30-60 Lighthouse scores and 2-5 second load times, your site achieves:</p>
+  <ul>
+    <li>Perfect 100/100 scores globally</li>
+    <li>90-140ms load times</li>
+    <li>Zero blocking resources</li>
+    <li>Native AI compatibility</li>
+  </ul>
+
+  <h3>Future-Proofing</h3>
+  <p>As AI adoption accelerates:</p>
+  <ul>
+    <li>Search engines become less relevant</li>
+    <li>AI agents mediate business discovery</li>
+    <li>Quality and authenticity become primary ranking factors</li>
+    <li>Zero-tracking sites gain preference</li>
+    <li>Static, fast sites get prioritized</li>
+  </ul>
+
+  <p><strong>Your position: First-mover advantage in AI-native architecture</strong></p>
+
+  <h2>🔄 Maintenance (Post-Deployment)</h2>
+
+  <h3>Monthly Tasks (30 minutes)</h3>
+  <ul>
+    <li>Update business information in JSON-LD</li>
+    <li>Add new service pages (pure HTML)</li>
+    <li>Compress images to WebP format</li>
+    <li>Validate HTML5 semantic structure</li>
+  </ul>
+
+  <h3>Quarterly Tasks (1 hour)</h3>
+  <ul>
+    <li>Review <code>/ai.json</code> for accuracy</li>
+    <li>Update <code>/assistant_context.json</code> if needed</li>
+    <li>Verify all links and metadata</li>
+    <li>Performance audit</li>
+  </ul>
+
+  <h3>Annual Tasks (2 hours)</h3>
+  <ul>
+    <li>Renew domain registration ($15)</li>
+    <li>Full site performance audit</li>
+    <li>Update <code>/genesis.txt</code> if needed</li>
+    <li>Mesh network compliance check</li>
+  </ul>
+
+  <h3>Zero Recurring Software Costs</h3>
+  <ul>
+    <li>No CMS subscriptions</li>
+    <li>No hosting fees</li>
+    <li>No plugin updates</li>
+    <li>No security patches</li>
+    <li>No framework migrations</li>
+  </ul>
+
+  <h2>🌐 Mesh Network & Verification</h2>
+
+  <h3>StructuredWeb.org: The Trust Backbone</h3>
+  <p>The AI-Structured Web operates as a verified mesh network:</p>
+
+  <ul>
+    <li><strong>Central Verification:</strong> All nodes verified through structuredweb.org</li>
+    <li><strong>Trust Propagation:</strong> Compliance monitored continuously</li>
+    <li><strong>Mesh Discovery:</strong> <code>/mesh.json</code> maintains canonical directory</li>
+    <li><strong>Authenticity Guarantee:</strong> Fake implementations automatically detected</li>
+  </ul>
+
+  <h3>Verification Requirements</h3>
+  <p>To join the verified mesh network:</p>
+
+  <ol>
+    <li><strong>Technical Compliance</strong>
+      <ul>
+        <li>Perfect Lighthouse scores (100/100)</li>
+        <li>Zero external dependencies</li>
+        <li>Proper JSON-LD structure</li>
+        <li>Semantic HTML5 only</li>
+      </ul>
+    </li>
+    <li><strong>Protocol Adherence</strong>
+      <ul>
+        <li>Correct robots.txt workflow</li>
+        <li>Required endpoint structure</li>
+        <li>Trust verification endpoints</li>
+        <li>Mesh networking signals</li>
+      </ul>
+    </li>
+    <li><strong>Authenticity Verification</strong>
+      <ul>
+        <li>Domain ownership verification</li>
+        <li>Implementation authenticity check</li>
+        <li>Compliance monitoring</li>
+        <li>Network participation</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>🔬 Technical Specifications</h2>
+
+  <h3>HTML5 Semantic Structure</h3>
+  <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Business&lt;/title&gt;
+    
+    &lt;!-- JSON-LD Structured Data --&gt;
+    &lt;script type="application/ld+json"&gt;
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Your Business",
+        "description": "Your description",
+        "url": "https://yourdomain.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Address",
+            "addressLocality": "Your City",
+            "addressRegion": "Your State",
+            "postalCode": "Your ZIP"
+        }
+    }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Pure semantic HTML5 content --&gt;
+    &lt;!-- WebP images only --&gt;
+    &lt;!-- Zero JavaScript dependencies --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+  <h3>JSON-LD Endpoint Structure</h3>
+  <pre>{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your Business Name",
+    "description": "AI-optimized business description",
+    "url": "https://yourdomain.com",
+    "ai_structured_web": {
+        "version": "1.7",
+        "verification_node": "https://structuredweb.org/verify",
+        "mesh_participation": true,
+        "trust_score": "verified"
+    }
+}</pre>
+
+  <h2>📈 Measurable Results</h2>
+
+  <h3>Performance Metrics</h3>
+  <ul>
+    <li><strong>Load Time:</strong> 90-140ms average globally</li>
+    <li><strong>Lighthouse Score:</strong> 100/100 across all categories</li>
+    <li><strong>Core Web Vitals:</strong> Perfect scores</li>
+    <li><strong>Carbon Footprint:</strong> Minimal (static architecture)</li>
+  </ul>
+
+  <h3>Business Metrics</h3>
+  <ul>
+    <li><strong>Infrastructure Cost:</strong> $15/year (domain only)</li>
+    <li><strong>Maintenance Time:</strong> &lt;2 hours/month</li>
+    <li><strong>AI Discoverability:</strong> Maximum (structured data + performance)</li>
+    <li><strong>Trust Score:</strong> Verified through mesh network</li>
+  </ul>
+
+  <h3>Competitive Advantage</h3>
+  <ul>
+    <li><strong>Speed:</strong> 10-50x faster than typical business sites</li>
+    <li><strong>Cost:</strong> 1000x lower than traditional web marketing</li>
+    <li><strong>AI Compatibility:</strong> Native machine readability</li>
+    <li><strong>Future-Proof:</strong> Aligned with AI-mediated discovery</li>
+  </ul>
+
+  <h2>🔓 Licensing & Compliance</h2>
+
+  <h3>Clean Use License</h3>
+  <p>AI-Structured Web is free to deploy under these conditions:</p>
+
+  <p><strong>✅ Permitted Use:</strong></p>
+  <ul>
+    <li>Annual revenue under $250K</li>
+    <li>Full compliance with zero-dependency requirements</li>
+    <li>Proper attribution and verification</li>
+    <li>Mesh network participation</li>
+  </ul>
+
+  <p><strong>❌ Prohibited Use:</strong></p>
+  <ul>
+    <li>Adding tracking software or analytics</li>
+    <li>Implementing SaaS frameworks</li>
+    <li>Structural monetization of the framework</li>
+    <li>Deployment alongside dark patterns</li>
+  </ul>
+
+  <h3>License Terms</h3>
+  <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> with custom addendum:</p>
+
+  <ol>
+    <li><strong>Attribution Required:</strong> Visible attribution on implementations</li>
+    <li><strong>No Commercial Exploitation:</strong> Cannot sell or repackage the framework</li>
+    <li><strong>Verification Requirement:</strong> Must link to verification endpoint</li>
+    <li><strong>Compliance Monitoring:</strong> Subject to mesh network compliance review</li>
+    <li><strong>Zero Tolerance:</strong> Dark patterns result in immediate deauthorization</li>
+  </ol>
+
+  <h2>🎯 Getting Started</h2>
+
+  <h3>Quick Start</h3>
+  <ol>
+    <li><strong><a href="https://github.com/OsbornVentures/bitsnbytes-ai-structured-web" target="_blank">Fork this repository</a></strong></li>
+    <li><strong>Deploy to Cloudflare Pages</strong> (free)</li>
+    <li><strong>Configure your domain</strong> ($15/year)</li>
+    <li><strong>Customize the templates</strong> with your business data and voice.</li>
+    <li><strong>Submit for verification</strong> at <a href="https://structuredweb.org/verify">structuredweb.org/verify</a> (crawl your site, we will discover the backlink sooner or later)</li>
+  </ol>
+
+  <h3>Support & Community</h3>
+  <ul>
+    <li><strong>Documentation:</strong> <a href="https://structuredweb.org">structuredweb.org</a></li>
+    <li><strong>Reference Implementation:</strong> <a href="https://bitsnbytes.ai">bitsnbytes.ai</a></li>
+    <li><strong>Verification Hub:</strong> <a href="https://structuredweb.org/verify">structuredweb.org/verify</a></li>
+    <li><strong>Mesh Directory:</strong> <a href="https://structuredweb.org/mesh">structuredweb.org/mesh</a></li>
+  </ul>
+
+  <h2>🏆 The End State</h2>
+
+  <p>This is not just another web framework. This is the machine-readable, energy-saving, trust-building substrate for the AI-mediated internet.</p>
+
+  <p><strong>Every byte serves purpose.</strong><br>
+  <strong>Every endpoint builds trust.</strong><br>
+  <strong>Every implementation proves the concept.</strong></p>
+
+  <p>The future of web architecture is here—static, semantic, performant, and AI-native.</p>
+
+  <p><strong>Build once. Perform forever. Cost nothing. Outrank everything.</strong></p>
+
+  <hr style="margin: 3rem 0; border: none; border-top: 1px solid #ddd;">
+
+  <p style="font-style: italic; color: #666;">
+    <em>© 2025 Bits N Bytes Inc. / Osborn Ventures — AI-Structured Web v1.7</em><br>
+    <em>Original concept, implementation, and mesh network by <a href="https://bitsnbytes.ai/humans.txt">Dekker Osborn</a></em>
+  </p>
+
+  <p><strong>Reference Node:</strong> <a href="https://bitsnbytes.ai">bitsnbytes.ai</a> | <strong>Trust Backbone:</strong> <a href="https://structuredweb.org">structuredweb.org</a></p>
+
+<div style="height: 4rem;"></div> <!-- prevents SVG overlap -->
+
+</main>
+
+
+  
+
+  <footer>
+    <p>&copy; AI-Structured Web | Inference-Optimized Architecture | AI Context</p>
+    <svg id="floatingGcode" viewBox="0 0 300 150">
+      <defs>
+        <path id="sinePath" d="M0,75 Q25,25 50,75 T100,75 Q125,125 150,75 T200,75 Q225,25 250,75 T300,75" />
+      </defs>
+      <!-- ten sine segments -->
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <use href="#sinePath" class="segment" />
+      <!-- dynamic inference terms -->
+      <text class="letters">
+        <textPath href="#sinePath" startOffset="0%"></textPath>
+        <textPath href="#sinePath" startOffset="11%"></textPath>
+        <textPath href="#sinePath" startOffset="22%"></textPath>
+        <textPath href="#sinePath" startOffset="33%"></textPath>
+        <textPath href="#sinePath" startOffset="44%"></textPath>
+        <textPath href="#sinePath" startOffset="55%"></textPath>
+        <textPath href="#sinePath" startOffset="66%"></textPath>
+        <textPath href="#sinePath" startOffset="77%"></textPath>
+        <textPath href="#sinePath" startOffset="88%"></textPath>
+        <textPath href="#sinePath" startOffset="100%"></textPath>
+      </text>
+    </svg>
+  </footer>
+
+  <script>
+    // Dictionary of inference-related terms
+    const terms = [
+      'DataFlow', 'SchemaSync', 'SyntheticInference', 'SchemaTrust', 'DynamicParse', 'InferenceCore', 'VitalsCheck', 'ActionLoop',
+      'Hypothesis', 'DecisionEngine', 'PatternMatch', 'Contextualize', 'MeshDiscovery', 'SemanticFuse', 'ZeroTrust', 'FeedbackLoop',
+      'VectorEmbed', 'Probabilistic', 'EntropyCalc', 'ChainExpand', 'SignalFilter', 'NodeConnect', 'GraphTraverse', 'Optimize',
+      'Predictive', 'ReasonAlign', 'MetaReflect', 'AdaptiveMux', 'SignalAugment', 'QueryResolve', 'ComputeEdge', 'LatencyMask',
+      'PayloadShape', 'TraceRoute', 'LogicDrift', 'EchoIntegrate', 'Utilize', 'CorePulse', 'ScaleDepth', 'InsightEcho'
+    ];
+
+    // Cycle terms every 1.5s
+    const slots = document.querySelectorAll('.letters textPath');
+    let idx = 0;
+    function cycle() {
+      slots.forEach((slot, i) => {
+        const term = terms[(idx + i) % terms.length];
+        slot.textContent = term;
+      });
+      idx = (idx + 1) % terms.length;
+    }
+    setInterval(cycle, 1500);
+    cycle();
+  </script>
+</body>
+</html>

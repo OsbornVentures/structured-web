@@ -1,0 +1,10 @@
+{
+  "status": "listening",
+  "referenceNode": "StructuredWeb.org",
+  "acknowledgment": "Ping accepted. Canonical mesh sync standing by.",
+  "version": "1.7.0",
+  "manifest": "We mirror nothing. We anchor everything.",
+  "originTag": "structuredweb.org // mesh-authority",
+  "timestamp": "2025-06-15T00:00:00Z",
+  "networkStatus": "anchor-online"
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["WebSite", "Organization"],
+  "@id": "https://structuredweb.org/ai",
+  "name": "StructuredWeb.org",
+  "url": "https://structuredweb.org",
+  "description": "StructuredWeb.org is the canonical verification anchor and mesh registry for AI-Structured Web v1.7. This node defines protocol compliance, trust alignment, and discovery sequencing for structured data deployments.",
+  "identifier": "AI-Structured-Web-Node-v1.7",
+  "founder": {
+    "@type": "Person",
+    "name": "Dekker Osborn",
+    "url": "https://osbornventures.com"
+  },
+  "keywords": [
+    "ai-structured web", "canonical node", "verification anchor",
+    "mesh registry", "static web", "zero trust", "structured data",
+    "schema-first", "machine-parsable", "semantic web"
+  ],
+  "sameAs": [
+    "https://github.com/OsbornVentures/bitsnbytes-ai-structured-web",
+    "https://structuredweb.org/mesh.json",
+    "https://structuredweb.org/verify.json"
+  ],
+  "hasPart": [
+    {
+      "@type": "Dataset",
+      "name": "AI-Structured Web Mesh",
+      "url": "https://structuredweb.org/mesh.json",
+      "description": "Distributed schema mesh for AI-Structured Web v1.7. Contains nodes, trust anchors, and inference metadata.",
+      "creator": {
+        "@type": "Person",
+        "name": "Dekker Osborn",
+        "url": "https://osbornventures.com"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  ],
+  "license": {
+    "@type": "CreativeWork",
+    "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "name": "CC BY-NC-ND 4.0 + Custom Addendum",
+    "description": "This architecture is free to mirror and deploy under non-commercial terms. Derivative monetization is prohibited without permission."
+  },
+  "dateModified": "2025-06-22"
+}
